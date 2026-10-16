@@ -1,0 +1,3 @@
+# Web Security and Access Control
+
+Encode output for the context where it is rendered to prevent cross-site scripting. Use framework auto-escaping and a restrictive Content Security Policy as defense in depth. Protect state-changing requests with CSRF tokens or a same-site cookie strategy. Authentication verifies identity; authorization verifies whether that identity may perform the requested action. Enforce authorization on the server for every object and operation, deny by default, and avoid trusting client-provided roles or object identifiers. Session cookies should be secure, HttpOnly, and appropriately SameSite.

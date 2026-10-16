@@ -1,0 +1,16 @@
+{
+  "submission_id": "5d7cd061ea856478",
+  "language": "python",
+  "source_name": "vulnerable.py",
+  "source_length": 186,
+  "valid": false,
+  "issues": [
+    {
+      "code": "PYTHON_SYNTAX",
+      "message": "'(' was never closed",
+      "line": 6,
+      "column": 46,
+      "severity": "error"
+    }
+  ]
+}

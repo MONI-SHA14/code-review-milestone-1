@@ -1,0 +1,3 @@
+# Secrets, Authentication, and Code Quality
+
+Do not hardcode API keys, passwords, tokens, or private keys in source code. Load secrets from a secret manager or protected environment configuration, rotate exposed credentials, and redact secrets from logs. Store passwords with a slow adaptive password hashing algorithm and use secure session handling. Good code is readable, cohesive, and testable: keep functions focused, remove duplication, close resources, handle errors narrowly, and avoid broad exception catches that hide failures. Complexity and duplication are review signals that should be supported with evidence rather than vague criticism.

@@ -1,0 +1,35 @@
+[
+  {
+    "chunk_id": "secrets-and-quality.md:0",
+    "source": "secrets-and-quality.md",
+    "title": "Secrets And Quality",
+    "score": 0.1657,
+    "text": "# Secrets, Authentication, and Code Quality Do not hardcode API keys, passwords, tokens, or private keys in source code. Load secrets from a secret manager or protected environment configuration, rotate exposed credentials, and redact secrets from logs. Store passwords with a slow adaptive password hashing algorithm and use secure session handling. Good code is readable, cohesive, and testable: keep functions focused, remove duplication, close resources, handle errors narrowly, and avoid broad exception catches that hide failures. Complexity and duplication are review signals that should be supported with evidence rather than vague criticism.",
+    "metadata": {
+      "word_start": 0,
+      "word_end": 92
+    }
+  },
+  {
+    "chunk_id": "owasp-injection.md:0",
+    "source": "owasp-injection.md",
+    "title": "Owasp Injection",
+    "score": 0.1017,
+    "text": "# OWASP Injection Prevention Injection occurs when untrusted data is interpreted as part of a command or query. SQL injection is prevented by parameterized queries or prepared statements. Bind values as parameters rather than concatenating strings. Validate types and ranges, use least-privilege database accounts, and avoid returning verbose database errors to users. For command injection, prefer safe library APIs over shell execution and use allowlists. Evidence should include the constructed query and the untrusted data flow, never the secret value.",
+    "metadata": {
+      "word_start": 0,
+      "word_end": 80
+    }
+  },
+  {
+    "chunk_id": "web-security.md:0",
+    "source": "web-security.md",
+    "title": "Web Security",
+    "score": 0.0363,
+    "text": "# Web Security and Access Control Encode output for the context where it is rendered to prevent cross-site scripting. Use framework auto-escaping and a restrictive Content Security Policy as defense in depth. Protect state-changing requests with CSRF tokens or a same-site cookie strategy. Authentication verifies identity; authorization verifies whether that identity may perform the requested action. Enforce authorization on the server for every object and operation, deny by default, and avoid trusting client-provided roles or object identifiers. Session cookies should be secure, HttpOnly, and appropriately SameSite.",
+    "metadata": {
+      "word_start": 0,
+      "word_end": 86
+    }
+  }
+]
